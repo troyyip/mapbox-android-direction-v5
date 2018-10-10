@@ -2,6 +2,8 @@
 # Mapbox directions V5 client for Android
 
 [Mapbox Directions](https://www.mapbox.com/developers/api/directions/) client for Android.
+This version is updated from [mapbox-directions-android](https://github.com/mbmc/mapbox-directions-android), it allows all the parameters for the Mapbox Directions V5. 
+
 
 
 ## Installation
@@ -12,11 +14,11 @@ To install the current _stable version_ add this to your `build.gradle`:
 
 ```
 repositories {
-    mavenCentral()
+    maven { url 'https://dl.bintray.com/troy0826/maven' }
 }
 
 dependencies {
-   
+   implementation 'com.mapboxsdk.android:mapboxSDK:1.1.2@aar'
 }
 ```
 
@@ -55,6 +57,11 @@ Or an asynchronous request (you need to provide your own `Callback<DirectionsRes
 
 ```
 client.enqueue(callback)
+```
+
+For China, you can switch the endpoint by passing value to `setEndPoint()`
+```
+md.setEndPoint(DirectionsCriteria.ENDPOINT_COM)
 ```
 
 ## Response object
