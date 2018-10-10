@@ -1,1 +1,1 @@
-include ':app', ':mapbpx-android-direction-v5'
+include ':app', ':mapbox-android-direction-v5'
