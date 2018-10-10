@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-   implementation 'com.mapboxsdk.android:mapboxSDK:1.1.2@aar'
+   implementation 'com.mapboxsdk.android:mapboxSDK:1.1.3@aar'
 }
 ```
 
